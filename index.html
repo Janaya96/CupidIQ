@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CupidIQ - Optimize Your Dating Profile</title>
+</head>
+<body>
+  <h1>Welcome to CupidIQ</h1>
+  <p>Optimize your dating profile with AI-driven insights.</p>
+  <form action="/analyze" method="POST" enctype="multipart/form-data">
+    <label for="location">Location:</label>
+    <select name="location" id="location" required>
+      <option value="Las Vegas">Las Vegas</option>
+      <option value="NYC">NYC</option>
+      <option value="LA">LA</option>
+      <option value="SF">SF</option>
+    </select>
+    <br/><br/>
+
+    <label for="ageRange">Age Range:</label>
+    <input type="text" name="ageRange" id="ageRange" placeholder="e.g., 25-30" required>
+    <br/><br/>
+
+    <label for="weight">Weight (lbs):</label>
+    <input type="number" name="weight" id="weight" required>
+    <br/><br/>
+
+    <label for="height">Height (inches):</label>
+    <input type="number" name="height" id="height" required>
+    <br/><br/>
+
+    <label for="ethnicity">Ethnicity/Race:</label>
+    <input type="text" name="ethnicity" id="ethnicity" required>
+    <br/><br/>
+
+    <label for="gender">Gender:</label>
+    <input type="text" name="gender" id="gender" required>
+    <br/><br/>
+
+    <label for="bio">Profile Bio:</label>
+    <br/>
+    <textarea name="bio" id="bio" rows="5" cols="30" required></textarea>
+    <br/><br/>
+
+    <label for="photo">Profile Photo:</label>
+    <input type="file" name="photo" id="photo" accept="image/*">
+    <br/><br/>
+
+    <button type="submit">Analyze Profile</button>
+  </form>
+</body>
+</html>
